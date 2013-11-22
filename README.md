@@ -1,0 +1,4 @@
+funwithmarkov
+=============
+
+Experimenting with 
