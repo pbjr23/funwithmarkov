@@ -1,4 +1,4 @@
 funwithmarkov
 =============
 
-Experimenting with 
+Experimenting with  Markov chains
