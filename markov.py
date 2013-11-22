@@ -12,16 +12,16 @@ def parse(filename):
 
 	return markovpairs
 
-def printer(filename):
+def printer(filename, words):
 	markovpairs = parse(filename)
 	init = random.choice(list(markovpairs.keys()))
 	acc = " ".join(init)
 
-	for i in range(30):
+	for i in range(words):
 		next = random.choice(markovpairs[init])
 		acc += " " + next
 		init = (init[1], next)
 
 	print(acc)
 
-printer("bible.txt")
+printer("bible.txt", 30)
